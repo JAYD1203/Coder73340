@@ -1,0 +1,47 @@
+/* ----------------------------------- SERVICIOS -------------------------------- */
+
+.servicios {
+        background-color: #d0f9f9;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .servicios i {
+        font-size: 3rem;
+        color: #7ade30;
+        background-color: #121b24;
+        padding: 8px 19px;
+        border-radius: 50%;
+    }
+
+    .servicioTitulo {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 10px 0;
+        transition: all 0.2s ease-in;
+    }
+
+    .column:hover .servicioTitulo {
+        color: white;
+    }
+
+    .divServicios .column{
+        border: 2px solid pink;
+        transition: all 0.3s ease-in;
+    }
+
+    .servicios .column:hover {
+        color: white;
+        background-color: #1b1b32;
+        cursor: pointer;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    .servicios .column:hover i{
+        background-color: white;
+    }

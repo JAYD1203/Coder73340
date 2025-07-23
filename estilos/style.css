@@ -1,319 +1,305 @@
 /* ----------- CONFIG GENERAL ------------- */
-
 * {
-    margin: 0;
-    box-sizing: content-box;
-    list-style: none;
-    text-decoration: none;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
-    background-color: #121b24;
+  background-color: #121b24;
 }
 
 .textWhite {
-    color: white;
+  color: white;
 }
 
 .textBlack {
-    color: black;
+  color: black;
 }
 
 h1 {
-    font-size: 3rem;
-    font-family: "Rubik Dirt", system-ui;
+  font-size: 3rem;
+  font-family: "Rubik Dirt", system-ui;
 }
 
 h2 {
-    font-size: 2rem;
-        font-family: "Rubik Dirt", system-ui;
+  font-size: 2rem;
+  font-family: "Rubik Dirt", system-ui;
 }
 
 p {
-    font-size: 1rem;
-    font-family: "Montserrat", sans-serif
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* -------------------- NAVBAR -------------------- */
-
 .navbar {
-    padding: 0;
+  padding: 0;
 }
 
 .container-fluid {
-        background-color: #1a191d;
-        padding: 2rem;
+  background-color: #1a191d;
+  padding: 2rem;
 }
 
 .navbar-collapse {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-toggler {
+  background-color: white;
+  margin-left: auto;
+  margin-right: 2rem;
 }
 
 .navbar-brand {
-    padding-left: 3rem;
+  padding-left: 3rem;
 }
 
 .nav-item a {
-    font-size: 1.5rem;
-    font-family: "Share Tech Mono", monospace;
+  font-size: 1.5rem;
+  font-family: "Share Tech Mono", monospace;
 }
 
 .nav-item {
-    padding: 1rem;
-    transition: all 0.3s ease;
+  padding: 1rem;
+  transition: all 0.3s ease;
 }
 
 .nav-item:hover a {
-    color: gray
+  color: gray;
 }
 
-/* ---------------------- CONTENT HOME ------------------------------ */
-
+/* ---------------------- HERO ------------------------------ */
 .sectionHome {
-    align-items: stretch;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
 }
 
 .divHome {
-    padding: 3rem;
+  padding: 3rem;
 }
 
-.divImages img {
-    padding-bottom: 2rem;
-}
-
-/* --------------------------- CONTENT SOBRE MI ----------------------------------- */
-
+/* --------------------------- CONTENT SOBRE MI ------------------------------- */
 .sobreMi {
-    padding: 1rem;
-    padding-top: 3rem;
-}
-
-.sobreMi .container {
-    max-width: 600px;
-    text-align: center;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tituloSobreMi {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.textSobreMi {
-    margin-bottom: 3rem;
-}
-
-/* ----------------------------------- SERVICIOS ----------------------------------------- */
-
+/* ----------------------------------- SERVICIOS -------------------------------- */
 .servicios {
-        padding: 40px 40px 60px 40px;
-        background-color: #d0f9f9;
-    }
+  background-color: #d0f9f9;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
 
-    .servicios i {
-        font-size: 3rem;
-        color: #7ade30;
-        background-color: #121b24;
-        padding: 8px 19px;
-        border-radius: 50%;
-    }
+.servicios i {
+  font-size: 3rem;
+  color: #7ade30;
+  background-color: #121b24;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
 
-    .servicioTitulo {
-        font-size: 25px;
-        font-weight: bold;
-        margin: 10px 0;
-        transition: all 0.2s ease-in;
-    }
+.servicioTitulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+  transition: all 0.2s ease-in;
+}
 
-    .column:hover .servicioTitulo {
-        color: white;
-    }
+.column:hover .servicioTitulo {
+  color: white;
+}
 
-    .divServicio .column{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 20px;
-        border: 2px solid pink;
-        transition: all 0.3s ease-in;
-    }
+.divServicios .column {
+  border: 2px solid pink;
+  transition: all 0.3s ease-in;
+}
 
-    .servicios .column:hover {
-        color: white;
-        background-color: #1b1b32;
-        cursor: pointer;
-    }
+.servicios .column:hover {
+  color: white;
+  background-color: #1b1b32;
+  cursor: pointer;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
 
-    .servicios .column:hover i{
-        background-color: white;
-    }
+.servicios .column:hover i {
+  background-color: white;
+}
 
- /* ------------------------------------ PROYECT -------------------------------------------------------- */
+/* ------------------------------------ PROYECT ------------------------------------- */
+.sectionProyect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-    .sectionProyect {
-        padding: 40px;
-    }
+.tituloProyect {
+  text-align: center;
+  margin: 30px 0;
+}
 
-    .tituloProyect {
-        text-align: center;
-    }
+.sectionProyect .proyect img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
 
-    .sectionProyect img {
-        height: 100%;
-        width: 100%;
-        padding: 10px;
-        border-radius: 10px;
-        display: block;
-        transition: all 0.3s ease;
-    }
+.proyect {
+  position: relative;
+}
 
-    .proyectContainer {
-        padding-top: 60px;
-        padding-bottom: 40px;
-    }
+.divProyect {
+  transition: all 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
 
-    .proyect {
-        position: relative;
-    }
+.divProyect p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
 
-    .divProyect {
-        transition: all 0.3s ease;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        text-align: center;
-    }
+.proyect:hover .divProyect {
+  opacity: 1;
+}
 
-    .divProyect p {
-        font-size: 25px;
-        font-weight: bold;
-        margin-bottom: 0;
-    }
-
-    .proyect:hover .divProyect {
-        opacity: 1;
-    }
-
-    .proyect:hover img {
-        opacity: 0.2;
-    }
-
-    .divProyect .iconContainer {
-        display: flex;
-    }
-
-    .divProyect i {
-        color: black;
-        font-size: 60px;
-        margin: 10px;
-    }
+.proyect:hover img {
+  opacity: 0.2;
+}
 
 /* ------------------------------------------ CONTACTO --------------------------------- */
-
 .container {
-    text-align: center;
-    min-width: 600px;
+  text-align: center;
+  min-width: 600px;
 }
 
 .tituloContacto {
-    padding: 1rem;
-    margin: 1rem;
-    margin-bottom: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
 }
 
 .divContacto {
-    background-color: #d0f9f9;
-    padding: 1rem;
-    margin-bottom: 2rem;
+  background-color: #d0f9f9;
+  padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* ------------------------------ FOOTER --------------------- */
-
 .footer {
-    display:flex;
-    flex-direction: column;
-    background-color: #1a191d;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #1a191d;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 15px;
 }
 
 .footerText {
-    margin: 10px;
-    font-size: 1rem;
-    padding: 0.5rem;
+  margin: 10px;
+  font-size: 1rem;
+  padding: 0.5rem;
 }
 
 .redesSociales {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .divRedesSociales a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20px;
-    width: 20px;
-    padding: 0.5rem;
-    margin: 10px;
-    border: solid 2px white;
-    border-radius: 50%;
-    transition: all 0.3s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  padding: 0.5rem;
+  margin: 10px;
+  border: solid 2px white;
+  border-radius: 50%;
+  transition: all 0.3s ease-in;
 }
 
 .divRedesSociales i {
-    color: white;
-    font-size: 1.5rem;
-    transition: all 0.3s ease-in;
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in;
 }
 
 .divRedesSociales a:hover {
-    background-color: white;
-    border: solid 2px violet;
+  background-color: white;
+  border: solid 2px violet;
 }
 
 .divRedesSociales a:hover i {
-    color: black;
+  color: black;
 }
 
 .copy {
-    font-family: "Share Tech Mono", monospace;
-    font-size: 12px;
-    margin: 10px;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 12px;
+  margin: 10px;
 }
 
 /* ---------------- RESPONSIVE ---------------- */
-@media screen and (max-width: 991px) {
-    .navbar-brand {
-        display: none;
-    }
+/* ------------------ HERO --------------- */
+@media (min-width: 820px) {
+  .divImages img {
+    max-height: 600px;
+  }
+}
+/* ----------------- PROYECTOS ------------------- */
+@media (min-width: 820px) {
+  .sectionProyect {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .proyectContainer .proyect {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+  }
+  .sectionProyect .proyect {
+    width: 300px;
+    margin: 10px 20px;
+  }
+  .sectionProyect .proyect img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+  .proyectContainer .proyect .divProyect {
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 767px) {
-    .navbar-toggler  {
-        color: white;
-    }
-}
-
-@media screen and (min-width: 700px) {
-    .imagesInferior {
-        max-width: 600px;
-    }   
-}
-
-@media screen and (max-width: 1400px) {
-    .divContacto {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 800px;
-        text-align: center;
-    }
-    .tituloContacto {
-        text-align: center;
-    }
-}
+/*# sourceMappingURL=style.css.map */

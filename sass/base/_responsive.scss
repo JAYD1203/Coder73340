@@ -1,0 +1,36 @@
+/* ---------------- RESPONSIVE ---------------- */
+/* ------------------ HERO --------------- */
+@media (min-width: 820px) {
+    .divImages img {
+        max-height: 600px;
+    }
+} 
+
+/* ----------------- PROYECTOS ------------------- */
+@media (min-width: 820px) {
+  .sectionProyect {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .proyectContainer .proyect {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 60vh;
+  }
+  .sectionProyect .proyect {
+    width: 300px;
+    margin: 10px 20px;
+  }
+  .sectionProyect .proyect img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+  .proyectContainer .proyect .divProyect {
+    text-align: center;
+  }
+}

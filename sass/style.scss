@@ -1,0 +1,26 @@
+// -------- RESET -----------
+@use "base/_reset.scss";
+
+// ------------ HEADER NAVBAR ----------
+@use "layout/_header.scss";
+
+// -------------- PAGES HERO ------------
+@use "pages/_index.scss";
+
+// --------------- PAGES SOBRE MI ------------
+@use "pages/_sobreMi.scss";
+
+// -------------- PAGES SERVICIOS -----------
+@use "pages/_servicios.scss";
+
+// ---------------- PAGES PROYECTOS --------------
+@use "pages/_proyectos.scss";
+
+// -------------- PAGES CONTACTO ---------------
+@use "pages/_contacto.scss";
+
+// ---------------- FOOTER ---------------
+@use "layout/_footer.scss";
+
+// ----------------- RESPONDIVE ---------------
+@use "base/_responsive.scss";

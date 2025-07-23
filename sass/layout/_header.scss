@@ -1,0 +1,40 @@
+/* -------------------- NAVBAR -------------------- */
+
+.navbar {
+    padding: 0;
+}
+
+.container-fluid {
+        background-color: #1a191d;
+        padding: 2rem;
+}
+
+.navbar-collapse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-toggler {
+    background-color: white;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.navbar-brand {
+    padding-left: 3rem;
+}
+
+.nav-item a {
+    font-size: 1.5rem;
+    font-family: "Share Tech Mono", monospace;
+}
+
+.nav-item {
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover a {
+    color: gray
+}
